@@ -21,6 +21,8 @@ Gradients
 body {
   display: grid;
   grid-template-columns: 1fr repeat(12, min(calc(100% / 12), 100px)) 1fr;
+  grid-template-rows: auto auto;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body > section {
@@ -28,7 +30,26 @@ body > section {
 }
 
 .comingsoon {
-  background-color: khaki;
   height: 100vh;
   grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(12, min(calc(100% / 12), 100px)) 1fr;
+}
+
+.comingsoon .logo {
+  grid-column: 2 / 8;
+}
+
+.comingsoon .content {
+  grid-column: 2 / 8;
+  grid-row: 2;
+}
+
+.comingsoon .model {
+  grid-column: 8 / -1;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
