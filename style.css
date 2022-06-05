@@ -64,8 +64,8 @@ body > section {
 }
 
 .comingsoon .content p {
-    color: var(--desaturated-red);
-    line-height: 1.6;
+  color: var(--desaturated-red);
+  line-height: 1.6;
 }
 
 .comingsoon .model {
@@ -74,4 +74,5 @@ body > section {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  object-position: top;
 }
