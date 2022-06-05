@@ -9,6 +9,7 @@
 /* 
 Gradients 
 - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+
 - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) 
 */
 
@@ -21,7 +22,6 @@ Gradients
 body {
   display: grid;
   grid-template-columns: 1fr repeat(12, min(calc(100% / 12), 100px)) 1fr;
-  grid-template-rows: auto auto;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -35,10 +35,14 @@ body > section {
 
   display: grid;
   grid-template-columns: 1fr repeat(12, min(calc(100% / 12), 100px)) 1fr;
+  grid-template-rows: 200px 1fr;
+  background: left top / 50% 100% url(images/bg-pattern-desktop.svg) no-repeat,
+  linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) 50%);
 }
 
 .comingsoon .logo {
   grid-column: 2 / 8;
+  margin-top: 4rem;
 }
 
 .comingsoon .content {
