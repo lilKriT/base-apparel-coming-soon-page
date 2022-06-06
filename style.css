@@ -140,3 +140,30 @@ body > section {
   transform: scale(1.1);
   transition: all 0.3s;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .comingsoon {
+    /* grid-column: 1 / -1; */
+
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
+
+  .comingsoon .logo {
+    grid-column: unset;
+  }
+
+  /* The content section */
+  .comingsoon .content {
+    grid-column: unset;
+  }
+
+  .comingsoon .model {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
