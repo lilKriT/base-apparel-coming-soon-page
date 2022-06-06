@@ -70,6 +70,7 @@ body > section {
 .comingsoon .content p {
   color: var(--desaturated-red);
   line-height: 1.6;
+  margin-bottom: 2.25rem;
 }
 
 /* Model picture, right column */
@@ -101,6 +102,8 @@ body > section {
   font-weight: 600;
   border: 3px solid var(--soft-red);
   background: url(images/icon-error.svg) calc(100% - 5.5rem) center no-repeat;
+  margin-bottom: 0.5rem;
+  caret-color: var(--desaturated-red);
 }
 
 .comingsoon #subscribe-now input::placeholder {
