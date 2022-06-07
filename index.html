@@ -34,13 +34,13 @@
           </button>
         </form>
       </div>
-      <img
-        src="images/hero-desktop.jpg"
-        alt="Model"
-        class="model"
-        width="610"
-        height="800"
-      />
+      <picture class="model">
+        <source media="(max-width: 768px)" srcset="images/hero-mobile.jpg" />
+        <img
+          src="images/hero-desktop.jpg"
+          alt="Our model, wearing our clothes."
+        />
+      </picture>
     </section>
   </body>
 </html>
