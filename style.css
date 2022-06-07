@@ -167,10 +167,12 @@ body > section {
   /* The content section */
   .comingsoon .content {
     grid-column: unset;
+    grid-row: 3;
   }
 
   .comingsoon .model {
     grid-column: unset;
     grid-row: unset;
+    grid-row: 2;
   }
 }
