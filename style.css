@@ -59,7 +59,7 @@ body > section {
 }
 
 .comingsoon h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   text-transform: uppercase;
   letter-spacing: 10px;
   line-height: 1.2;
@@ -71,7 +71,7 @@ body > section {
   font-weight: 300;
 }
 
-.comingsoon .content p {
+.comingsoon .content > p {
   color: var(--desaturated-red);
   line-height: 1.6;
   margin-bottom: 2.25rem;
@@ -155,24 +155,42 @@ body > section {
 
   .comingsoon {
     /* grid-column: 1 / -1; */
-
+    height: unset;
     grid-template-columns: 1fr;
     grid-template-rows: unset;
+    background: linear-gradient(
+      135deg,
+      hsl(0, 0%, 100%),
+      hsl(0, 100%, 98%) 50%
+    );
   }
 
   .comingsoon .logo {
     grid-column: unset;
+    margin: 2rem 2rem;
   }
 
   /* The content section */
   .comingsoon .content {
     grid-column: unset;
     grid-row: 3;
+    padding: 1.5rem;
+  }
+
+  .comingsoon h1 {
+    font-size: 3.125rem;
+    margin-bottom: 0.625rem;
+    text-align: center;
+  }
+
+  .comingsoon .content > p {
+    text-align: center;
   }
 
   .comingsoon .model {
     grid-column: unset;
     grid-row: unset;
     grid-row: 2;
+    margin-bottom: 3rem;
   }
 }
