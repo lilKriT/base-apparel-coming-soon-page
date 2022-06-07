@@ -185,6 +185,7 @@ body > section {
 
   .comingsoon .content > p {
     text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   .comingsoon .model {
