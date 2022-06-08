@@ -8,9 +8,10 @@ form.addEventListener("submit", (e) => {
   let email = emailField.value.trim();
 
   if (isValid(email, emailRegex)) {
-    alert("valid");
+    emailField.parentElement.classList.add("invalid");
   } else {
-    alert("invalid");
+    emailField.parentElement.classList.remove("invalid");
+    e.preventDefault();
   }
 });
 
