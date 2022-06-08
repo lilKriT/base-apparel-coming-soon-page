@@ -7,7 +7,11 @@ const emailRegex =
 form.addEventListener("submit", (e) => {
   let email = emailField.value.trim();
 
-  alert(email);
+  if (isValid(email, emailRegex)) {
+    alert("valid");
+  } else {
+    alert("invalid");
+  }
 });
 
 function isValid(field, regex) {
