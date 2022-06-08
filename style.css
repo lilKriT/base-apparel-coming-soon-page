@@ -104,13 +104,20 @@ body > section {
 
 .comingsoon #subscribe-now .input input[type="text"] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 14px 20px;
   border-radius: 100px;
   font-weight: 600;
-  border: 3px solid var(--soft-red);
-  background: url(images/icon-error.svg) calc(100% - 5.5rem) center no-repeat;
+  /* border: 3px solid var(--soft-red); */
+  border: 1px solid var(--desaturated-red);
   margin-bottom: 0.5rem;
   caret-color: var(--desaturated-red);
+}
+
+.comingsoon #subscribe-now .input.invalid input[type="text"] {
+  background: url(images/icon-error.svg) calc(100% - 5.5rem) center no-repeat;
+  border: 3px solid var(--soft-red);
+  padding: 12px 20px;
+
 }
 
 .comingsoon #subscribe-now input::placeholder {
@@ -125,6 +132,11 @@ body > section {
 .comingsoon #subscribe-now .input .invalid-message {
   color: var(--desaturated-red);
   padding-left: 20px;
+  display: none;
+}
+
+.comingsoon #subscribe-now .input.invalid .invalid-message {
+  display: block;
 }
 
 .comingsoon #subscribe-now button {
